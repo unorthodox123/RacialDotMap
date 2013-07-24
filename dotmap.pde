@@ -1,4 +1,3 @@
-
 BufferedReader reader;
 double ll, bb, rr, tt;
 
@@ -129,8 +128,8 @@ void setup(){
           if (pg!=null) {
             pg.endDraw();
             PVector gtile = proj.GoogleTile((int)tms_tile.x, (int)tms_tile.y, level);
-            println( "C:/Users/Local Admin/Desktop/Weldon Cooper Center/Dot Mapping/tiles4/"+level+"/"+int(gtile.x)+"/"+int(gtile.y)+".png" );
-            pg.save( "C:/Users/Local Admin/Desktop/Weldon Cooper Center/Dot Mapping/tiles4/"+level+"/"+int(gtile.x)+"/"+int(gtile.y)+".png" );
+            println( ".../tiles4/"+level+"/"+int(gtile.x)+"/"+int(gtile.y)+".png" );
+            pg.save( ".../tiles4/"+level+"/"+int(gtile.x)+"/"+int(gtile.y)+".png" );
             println( "done" );
           }
 
@@ -196,7 +195,7 @@ void setup(){
       if (pg!=null) {
         pg.endDraw();
         PVector gtile = proj.GoogleTile((int)tms_tile.x, (int)tms_tile.y, level);
-        pg.save( "C:/Users/Local Admin/Desktop/Weldon Cooper Center/Dot Mapping/tiles4/"+level+"/"+int(gtile.x)+"/"+int(gtile.y)+".png" );
+        pg.save( ".../tiles4/"+level+"/"+int(gtile.x)+"/"+int(gtile.y)+".png" );
         println( "done" );
       }
     } 
